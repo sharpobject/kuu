@@ -23,3 +23,7 @@ With all this in mind, maybe there should be separate concepts of maps and array
 # MEMORY LIMIT
 
 Hey the luajit memory limit sucks. If I want to write inefficient code that will abuse the GC I should be able to do that, thanks.
+
+# indexing and intervals
+
+According to [this dude](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html) we should use half-open intervals like [a, b) starting at 0 in programming languages. Lua uses closed intervals like [a,b] starting at 1.
