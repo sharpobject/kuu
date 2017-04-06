@@ -14,7 +14,7 @@ closed over `...` cannot be used (this may be an issue with the runtime rather t
 
 You can capture varargs or multiple returns using `{...}` or `{f()}`, but that won't let you differentiate between explicit nils and the absence of a value. You need to use `select("#", ...)` and `some_other_function_that_collects_this_information(f())` respectively to get the right thing to happen.
 
-Thinks like json serializers have to do extra work to guess whether tables are numeric or not.
+Things like json serializers have to do extra work to guess whether tables are numeric or not.
 
 Mike Pall says: [Corollary: one should definitely separate the concepts of a map and an array if one were to design a new computer language.]
 
